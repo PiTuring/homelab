@@ -2,7 +2,7 @@
 
 > Le journal de bord de mon homelab d'étudiant : je monte une infra from scratch pour apprendre, casser, réparer, et documenter tout ça en public.
 
-🌐 **Site :** https://<ton-user>.github.io/homelab/
+🌐 **Site :** https://pituring.github.io/homelab/
 
 > [!WARNING]
 > 🚧 **Projet en cours de construction.** Le homelab, la documentation et ce repo évoluent en permanence : des pages sont vides ou incomplètes, certaines informations peuvent être obsolètes, et la structure peut changer sans préavis. Reviens régulièrement ou suis les [issues](../../issues) pour voir l'avancement.
