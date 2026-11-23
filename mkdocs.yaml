@@ -1,0 +1,75 @@
+site_name: Homelab
+site_description: Homelab d'étudiant, documentation et journal de bord (infra, services, sécurité)
+site_url: https://pituring.github.io/homelab/
+repo_url: https://github.com/PiTuring/homelab
+repo_name: PiTuring/homelab
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 P1TUR1NG - Licence MIT
+
+theme:
+  name: material
+  language: fr
+  palette:
+    # Mode clair
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Passer en mode sombre
+    # Mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Passer en mode clair
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+plugins:
+  - search
+  - blog
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        # Diagrammes Mermaid
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Accueil: index.md
+  - Blog: blog/index.md
+  - Infrastructure: infrastructure/index.md
+  - Services: services/index.md
+  - Opérations: operations/index.md
+  - Décisions: decisions/index.md
+  - Changelog: changelog.md

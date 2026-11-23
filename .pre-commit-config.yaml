@@ -1,0 +1,18 @@
+repos:
+  # Détection de secrets (mots de passe, tokens, clés) avant chaque commit
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
+
+  # Hygiène de base
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-yaml
+        # --unsafe : mkdocs.yml utilise une balise Python (!!python/name)
+        args: [--unsafe]

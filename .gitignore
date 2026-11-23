@@ -1,3 +1,26 @@
+# --- Homelab : fichiers sensibles à ne jamais commiter ---
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+*.kdbx
+*.ovpn
+*.tfstate
+*.tfstate.*
+*.tfvars
+secrets/
+private/
+.secrets*
+id_rsa*
+id_ed25519*
+
+# --- Divers ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
